@@ -20,15 +20,16 @@ class Animal(object):
     return self.gender
 
 class Pet(Animal):
+    type = ''
     def __Init__(self, *args):
       if len(args) >= 3:
         self.name = args[0]
         self.gender = args[1]
-        self.type = args[2]
+        type = args[2]
       else:
         self.name = ''
         self.gender = ''
-        self.type = ''
+        type = ''
     
     def settype(self, type):
         self.type = type
