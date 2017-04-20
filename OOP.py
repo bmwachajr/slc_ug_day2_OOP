@@ -21,7 +21,7 @@ class Animal(object):
 
 class Pet(Animal):
     type = ''
-    def __Init__(self, *args):
+    def __init__(self, *args):
       if len(args) >= 3:
         self.name = args[0]
         self.gender = args[1]
